@@ -3,10 +3,10 @@ class User
   include Mongoid::Timestamps
   include Mongoid::Paperclip
 
+  has_mongoid_attached_file :avatar
+
   field :name, type: String
   field :email, type: String
-
-  has_mongoid_attached_file :avatar
 
   validates :name, :email, presence: true
   validates :email, uniqueness: :true
