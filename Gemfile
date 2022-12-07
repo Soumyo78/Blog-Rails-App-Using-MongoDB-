@@ -51,6 +51,9 @@ gem "mongoid"
 # For file storage
 gem "mongoid-paperclip"
 
+# For pagination
+gem "kaminari-mongoid"
+
 # Avoid CORS issues when API is called from the frontend app.
 gem "rack-cors"
 

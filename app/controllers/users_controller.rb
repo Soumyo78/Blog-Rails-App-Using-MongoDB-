@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    users = User.order(created_at: :desc)
+    users = User.order(created_at: :desc).page(params[:page])
     render_success(:ok, users, meta: { message: "Users loaded." })
   end
 

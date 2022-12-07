@@ -111,6 +111,10 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     jsonapi-renderer (0.2.2)
+    kaminari-core (1.2.2)
+    kaminari-mongoid (1.0.2)
+      kaminari-core (~> 1.0)
+      mongoid
     kt-paperclip (7.1.1)
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
@@ -250,6 +254,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  kaminari-mongoid
   mongoid
   mongoid-paperclip
   pry
